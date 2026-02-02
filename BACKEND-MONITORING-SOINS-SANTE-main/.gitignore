@@ -1,0 +1,54 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### 🔒 Exclure les fichiers de configuration sensibles (IMPORTANT)
+src/main/resources/application-local.yml
+src/main/resources/application.yml
+src/main/resources/*.secret.yml
+src/main/resources/*.private.yml
+
+### 🔒 Exclure les clés SSH, certificats
+*.pem
+*.key
+*.p12
+*.crt
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Logs ###
+*.log
+logs/
+spring.log
+
+### OS junk ###
+.DS_Store
+Thumbs.db
